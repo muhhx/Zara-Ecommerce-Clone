@@ -1,0 +1,7 @@
+.profile_pedidos {
+    height: 30px;
+    border: solid 1px black;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px;
+}

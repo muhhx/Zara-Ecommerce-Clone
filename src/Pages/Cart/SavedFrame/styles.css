@@ -1,0 +1,30 @@
+.savedframe_container {
+    height: 100%;
+    min-width: 200px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.savedframe_image {
+    width: 100%;
+}
+
+.savedframe_image img {
+    width: 100%;
+}
+
+.savedframe_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.savedframe_info button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}

@@ -1,0 +1,16 @@
+.item_details-colors_outer {
+    height: 100%;
+    aspect-ratio: 1;
+    border: solid 1px transparent;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.item_details-colors_inner {
+    height: 80%;
+    width: 80%;
+    border-radius: 100%;
+}

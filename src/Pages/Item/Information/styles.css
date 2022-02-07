@@ -1,0 +1,56 @@
+.information_container-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 100px;
+    padding-bottom: 20px;
+    gap: 20px;
+    padding-top: 120px;
+}
+
+.information_container {
+    height: 40vh;
+    width: 200px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.information_container::-webkit-scrollbar {
+    background-color: #ccc;
+    width: 1px;
+}
+
+.information_container::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+.information_container-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.information_container-icons div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
+.information_container-icons div img {
+    width: 8%;
+}
+
+.information_container-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 700;
+}

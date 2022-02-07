@@ -1,0 +1,46 @@
+.item_container {
+    width: 100%;
+    display: grid;
+    padding: 0px 25px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    overflow: hidden;
+}
+
+.item_details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 80px;
+}
+
+.item_details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.item_details-header button {
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+}
+
+.item_details-colors {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    height: 20px;
+    align-items: center;
+}
+
+.item_details-estoque {
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    padding: 5px 0px;
+}
+
+.item_details-estoque p {
+    cursor: pointer;
+}

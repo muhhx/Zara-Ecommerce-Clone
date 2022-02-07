@@ -1,0 +1,88 @@
+.editcolor_container {
+    border-left: solid 1px rgb(146, 146, 146);
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rgb_edit {
+    height: 50%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.edit_content-estoque {
+    padding-left: 30px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edit_content-class {
+    display: flex;
+    gap: 30px;
+}
+
+.edit_content-flex {
+    display: flex;
+    width: 60px;
+    justify-content: space-between;
+}
+
+.edit_content-flex button {
+    height: 100%;
+    aspect-ratio: 1;
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.edit_delcolor {
+    background-color: black;
+    border: none;
+    color: white;
+    height: 25px;
+    width: 100px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.editcolor_section {
+    display: flex;
+    height: 100%;
+    gap: 100px;
+}
+
+.editcolor_imagesection {
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    border-left: solid 1px rgb(146, 146, 146);
+}
+
+.imageedit_container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.imageedit_container button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}
+
+.imageedit_image {
+    height: 100%;
+}
+
+.imageedit_image img {
+    height: 100%;
+}

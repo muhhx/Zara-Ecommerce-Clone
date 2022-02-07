@@ -1,0 +1,35 @@
+.login_container {
+    display: f  lex;
+    flex-direction: column;
+    width: 250px;
+    justify-content: space-between;
+}
+
+.login_container h1 {
+    margin-bottom: 20px;
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-between;
+}
+
+.login_form input {
+    height: 25px;
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px black;
+    margin-top: 20px;
+}
+
+.login_form button {
+    height: 35px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-top: 50px;
+}

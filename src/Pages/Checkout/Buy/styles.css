@@ -1,0 +1,44 @@
+.buy_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 101;
+}
+
+.buy_wrapper {
+    height: 200px;
+    width: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    border: solid 1px #ccc;
+    position: relative;
+}
+
+.buy_wrapper button {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.buy_close {
+    padding-top: 20px;
+    padding-right: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}

@@ -1,0 +1,62 @@
+.cartframe_container {
+    height: 100%;
+    min-width: 350px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cartframe_wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.cartframe_image {
+    height: 100%;
+    width: 65%;
+}
+
+.cartframe_image img {
+    width: 100%;
+}
+
+.cartframe_info {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+    align-items: flex-start;
+}
+
+.cartframe_upper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.cartframe_additem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.cartframe_additem button {
+    background-color: transparent;
+    border: none;
+    height: 10px;
+    cursor: pointer;
+}
+
+.cartframe_additem button img {
+    height: 100%;
+}
+
+.cartframe_deletebttn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

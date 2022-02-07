@@ -1,0 +1,80 @@
+.add_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.add_info-basic {
+    display: flex;
+    width: 100%;
+    gap: 100px;
+}
+
+.add_info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add_info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.add_info-boolean {
+    display: flex;
+    gap: 20px;
+}
+
+.add_info-boolean span {
+    cursor: pointer;
+}
+
+.add_button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+.enviar_button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.add_title {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.add_color-section {
+    display: flex;
+    gap: 50px;
+}
+
+.add_color-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.add_input {
+    border: none;
+    border-bottom: solid 1px #ccc;
+    padding: 0px 10px;
+}
+
+.add_input-estoque {
+    border: none;
+    border-bottom: solid 1px #ccc;
+    width: 50px;
+}

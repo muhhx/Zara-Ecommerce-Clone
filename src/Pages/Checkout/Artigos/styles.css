@@ -1,0 +1,12 @@
+.artigos_images {
+    display: flex;
+    gap: 20px;
+}
+
+.artigos_image {
+    height: 200px;
+}
+
+.artigos_image img {
+    height: 100%;
+}

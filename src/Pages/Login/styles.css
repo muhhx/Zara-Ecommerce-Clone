@@ -1,0 +1,32 @@
+.login_section {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 120px;
+    gap: 100px;
+}
+
+.login_register-container {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login_register-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login_register-button {
+    width: 100%;
+    height: 35px;
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+}

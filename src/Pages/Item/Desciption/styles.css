@@ -1,0 +1,12 @@
+.item_details-description p {
+    height: 60px;
+    overflow: hidden;
+}
+
+.item_details-description button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 700;
+}

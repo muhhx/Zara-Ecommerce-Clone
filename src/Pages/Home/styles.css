@@ -1,0 +1,16 @@
+.home_section {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_container {
+    height: 70%;
+    cursor: pointer;
+}
+
+.home_container img {
+    height: 100%;
+}

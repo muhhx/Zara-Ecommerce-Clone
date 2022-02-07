@@ -1,0 +1,7 @@
+.edit_editbttn {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}

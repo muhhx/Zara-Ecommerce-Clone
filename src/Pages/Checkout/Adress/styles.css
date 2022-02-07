@@ -1,0 +1,10 @@
+.checkout_enderecos-enderecos {
+    display: flex;
+    gap: 20px;
+}
+
+.checkout_enderecos-pins {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
