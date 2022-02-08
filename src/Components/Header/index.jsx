@@ -32,7 +32,9 @@ export default function Header() {
                 </div>
                 <div className="header_right">
                     <div className='header_right-main'>
-                        <button className='header_search'>PESQUISA</button>
+                        <Link to={'/search'}>
+                            <button className='header_search'>PESQUISA</button>
+                        </Link>
                         <div>
                             {currentUser ? <Link to={'/user'}><button>{currentUser.firstName.toUpperCase()}</button></Link> : <Link to={'/login'}><button>LOGIN</button></Link>}
                             <button>AJUDA</button>

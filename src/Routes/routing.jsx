@@ -8,6 +8,7 @@ import Signup from '../Pages/Signup'
 import User from '../Pages/User'
 import Checkout from '../Pages/Checkout'
 import Adm from '../Pages/Adm'
+import Search from '../Pages/Search'
 import Error from '../Pages/Error'
 
 import PrivateRoute from './private'
@@ -30,8 +31,8 @@ export default function Routing() {
             <Route element={<PrivateRoute />}>
                 <Route path='/adm' element={<Adm />}/>
             </Route>
-            {/* <Route path='/search' element={<div>This is search</div>}/>
-            <Route path='/ajuda' element={<div>This is ajuda</div>}/> */}
+            <Route path='/search' element={<Search />}/>
+            {/* <Route path='/ajuda' element={<div>This is ajuda</div>}/> */}
             <Route path='*' element={<Error />}/>
         </Routes>
     )

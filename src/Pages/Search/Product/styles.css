@@ -1,0 +1,26 @@
+.productsearch_container {
+    max-width: 210px;
+    display: flex;
+    flex-direction: column;
+}
+
+.productsearch_image {
+    width: 100%;
+}
+
+.productsearch_image img {
+    width: 100%;
+}
+
+.productsearch_description {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 5px;
+}
+
+.productsearch_name {
+    max-width: 70%;
+    max-height: 12px;
+    overflow: hidden;
+}
