@@ -1,5 +1,6 @@
-import { useAuth } from '../../Context/auth'
 import { useState } from 'react'
+import { useAuth } from '../../Context/auth'
+import { useAlert } from '../../Context/alert'
 import { useNavigate } from 'react-router-dom'
 import { useDatabase } from '../../Context/database'
 
@@ -11,6 +12,7 @@ export default function Signup() {
     const navigate = useNavigate()
     const { handleSignup } = useAuth()
     const { handleAdd } = useDatabase()
+    const { setShowAlert, setAlertMessage } = useAlert()
     const [inputType, setInputType] = useState('Particular')
     const [isLoading, setIsLoading] = useState(false)
 
@@ -68,22 +70,27 @@ export default function Signup() {
         //Verifications
         if(email && password && confirmPassword && firstName && cpf && cep && endereco && estado && cidade && bairro) {
             if(password !== confirmPassword) {
-                return console.log('Passwords don\'t match!')
+                setAlertMessage('As senhas não são iguais!')
+                return setShowAlert(true)
             }
             
             if(password.length < 6) {
-                return console.log('Passwords gotta be at least 6 characters long')
+                setAlertMessage('A senha precisa ter no mínimo 6 caracteres')
+                return setShowAlert(true)
             }
     
             if(cpf.length !== 11) {
-                return console.log('Digite um CPF válido!')
+                setAlertMessage('Digite um CPF válido!')
+                return setShowAlert(true)
             }
     
             if(cep.length !== 8) {
-                return console.log('Digite um CEP válido!')
+                setAlertMessage('Digite um CEP válido!')
+                return setShowAlert(true)
             }
         } else {
-            return console.log('Preencha todos os campos!')
+            setAlertMessage('Preencha todos os campos!')
+            return setShowAlert(true)
         }
 
         const userData = {
@@ -126,7 +133,8 @@ export default function Signup() {
             await handleAdd("pedidos", userPedidos)
             navigate('/user')
         } catch(error) {
-            console.log(error)
+            setAlertMessage('Não foi possível criar sua conta')
+            setShowAlert(true)
         }
         setIsLoading(false)
     }

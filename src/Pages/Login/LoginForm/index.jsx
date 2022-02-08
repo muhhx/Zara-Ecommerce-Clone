@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useAuth } from '../../../Context/auth'
+import { useAlert } from '../../../Context/alert'
 import { useNavigate } from 'react-router-dom'
 import './styles.css'
 
@@ -8,6 +9,7 @@ export default function LoginForm() {
     const [password, setPassword] = useState()
     const [email, setEmail] = useState()
     const { handleLogin, currentUser } = useAuth()
+    const { setAlertMessage, setShowAlert } = useAlert()
     const navigate = useNavigate() 
 
     async function verification(e) {
@@ -15,17 +17,20 @@ export default function LoginForm() {
 
         if(email && password) {
             if(password.length < 6) {
-                return console.log('A senha precisa ter no mínimo 6 caracteres')
+                setAlertMessage('A senha precisa ter no mínimo 6 caracteres')
+                return setShowAlert(true)
             }
         } else {
-            return console.log('Preencha todos os dados')
+            setAlertMessage('Preencha todos os dados')
+            return setShowAlert(true)
         }
 
         try {
             setIsLoading(true)
             await handleLogin(email, password)
         } catch(error) {
-            console.log(error)
+            setAlertMessage('Não foi possível fazer o login')
+            setShowAlert(true)
         }
         setIsLoading(false)
     }
