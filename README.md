@@ -2,6 +2,8 @@
 Project cloning Zara's website interface as well as its ecommerce functionalities, such as authentication and product stock control.
 Not responsive! Made only for web.
 
+Live demo: zara-ecommerce-clone.netlify.app
+
 Free normal user account(you can also create your own):
 - Login: user@teste.com
 - Password: 123123
