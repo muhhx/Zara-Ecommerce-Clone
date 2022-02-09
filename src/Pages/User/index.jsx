@@ -20,7 +20,7 @@ export default function User() {
 
     switch(selectedSection) {
         case 0: section = <Pedidos />; break;
-        case 1: section = <Perfil />; break;
+        // case 1: section = <Perfil />; break;
         case 2: section = <Sair />
     }
 
@@ -35,7 +35,7 @@ export default function User() {
             <main className='user_container'>
                 <div className='user_options'>
                     <Options options={options} value={0} message={'PEDIDOS'}/>
-                    <Options options={options} value={1} message={'PERFIL'}/>
+                    {/* <Options options={options} value={1} message={'PERFIL'}/> */}
                     <Options options={options} value={2} message={'SAIR'}/>
                 </div>
                 <div className='user_content'>

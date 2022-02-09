@@ -84,8 +84,11 @@ export default function Edit() {
     }
 
     async function deleteItem() {
-        if(currentUser.email === 'muriloue@gmail.com') {
+        if(currentUser.email === 'murilo@gmail.com') {
             await handleDelete("produtos", newProduct.id)
+            setAlertMessage('Produto deletado!')
+            setShowAlert(true)
+            setShowEdit(false)
         } else {
             setAlertMessage('Apenas o criador do site pode deletar produtos!')
             setShowAlert(true)
