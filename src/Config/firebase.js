@@ -3,12 +3,12 @@ import { getAuth } from 'firebase/auth'
 import { getFirestore } from 'firebase/firestore'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAt9fI2eYLf1lWnwTerIlHY-nBDPIE5QWo",
-    authDomain: "zara-ecommerce-clone.firebaseapp.com",
-    projectId: "zara-ecommerce-clone",
-    storageBucket: "zara-ecommerce-clone.appspot.com",
-    messagingSenderId: "612563402528",
-    appId: "1:612563402528:web:2e49024a6300919c2a6145"
+    apiKey: import.meta.env.VITE_APP_API_KEY,
+    authDomain: import.meta.env.VITE_APP_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_APP_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_APP_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_APP_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_APP_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);

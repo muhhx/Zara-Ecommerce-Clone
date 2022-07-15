@@ -1,65 +1,76 @@
-<h1>Zara Ecommerce Clone</h1>
-<h3 align="center">Projeto finalizado. 🎓✨</h3>
-<div align="center">
+<h1>Vanilla E-commerce (2020)</h1>
 
-[![Linkedin Badge](https://img.shields.io/badge/-Murilo%20Santos-231f20?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/giovannalinda)](https://www.linkedin.com/in/muhhx) 
-[![Gmail Badge](https://img.shields.io/badge/-muriloue@gmail.com-231f20?style=flat-square&logo=Gmail&logoColor=white&link=mailto:muriloue@gmail.com)](mailto:muriloue@gmail.com)
+<h4 align="center">
+    <span>Navigation preview:</span>
+  <img alt="Readme" title="Readme" src="./github/PREVIEW_NAVIGATION.gif" />
+</h4>
 
-</div>
-<p align="center">
-    <a href="#Sobre">Sobre</a> - 
-    <a href="#Preview">Preview</a> - 
-    <a href="#Funcionalidades">Funcionalidades</a> - 
-    <a href="#Tecnologias">Tecnologias</a> - 
-    <a href="#Instalar">Instalar</a>
-</p>
+You can check all of the screens and gifs with previews by clicking [here](https://github.com/muhhx/Zara-Ecommerce-Clone/tree/master/github)
 
-## Sobre
-<a href="https://zara-ecommerce-clone.netlify.app/">Clique aqui para acessar o site.</a>
-<p>Project cloning Zara's website interface as well as its ecommerce functionalities, such as authentication and product stock control.
-Not responsive! Made only for web.</p>
+## About this Project
+- **Live website:** <https://zara-ecommerce-clone.netlify.app/>
+  
+**THIS PROJECT WAS DONE IN 2020, READ THE IMPORTANT OBSERVATIONS**
 
-## Preview
+Project cloning Zara's website interface as well as its ecommerce functionalities, such as authentication and product stock control using JavaScript, React and Firebase as a backend. 
 
+Let's connect on LinkedIn: <https://www.linkedin.com/in/muhhx/>
 
-## Funcionalidades
-- [x] Autenticação de usuário
-- [x] Carrinho (Adicionar, retirar do carrinho, preço total)
-- [x] Filtros de pesquisa
-- [x] Lista de desejos (adicionar produto na sua lista de desejos)
-- [x] Página privada de administrador para editar produtos
-- [x] Página de pagamento
-- [x] Controle de estoque em tempo real
+Send me an email: muriloue@gmail.com
 
-## Tecnologias
-- Vite
-- Typescript
-- React.js
-- Styled-components
-- React Hooks
-- Context API
-- React Router Dom v6.
-- Firebase
+## Important observations
+- This was one of my first big projects using react, firebase, that I did back in the beginning of 2020. So there is probably a lot of obvious improvements that I could do here in regards to the whole system, code, user experience, user interface, etc 😁.
+- Zara's website identity changed a bit in 2022, so this project is not that identitical anymore.
+- The website is not responsive!
+- I don't know why, but the option to buy a product stopped working the last time I checked.
+- This was a learning project, so feel free to add functionalities and modify the project the way you want!
 
-## Instalar
-<p>Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-    <a href="https://git-scm.com">Git</a> e <a href="https://nodejs.org/en/">Node.js</a>. 
-    Além disto, é bom ter um editor para trabalhar com o código como 
-    <a href="https://code.visualstudio.com/">VSCode</a>.
-</p>
+## Built with
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) | Styling
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) | Built with
+- [React](https://reactjs.org/docs/getting-started.html) | React functional components
+- [React-Router-Dom v6](https://reactrouter.com/docs/en/v6/getting-started/overview) | Router
+- [React Context API](https://reactjs.org/docs/context.html) | Manage simple states
+- [Firebase](https://firebase.google.com/docs/build) | Backend functionalities
+- [Firebase Storage](https://firebase.google.com/docs/storage) | Image storage
+- [Firebase Database](https://firebase.google.com/docs/firestore) | Database
+- [Firebase Authentication](https://firebase.google.com/docs/auth) | User authentication
 
-```bash
-# Clone este repositório
-$ git clone <https://github.com/muhhx/Zara-Ecommerce-Clone>
+## Main functionalities
+- User Authentication (Login, Register and Logout) using Firebase
+- Product Stock control (the most interesting functionality in my opinion)
+- Cart (add, delete product, increase and decrease quantity)
+- Search (search through the products)
+- Add product to your list of favorites
+- Admin: Create, Delete and update product
 
-# Acesse a pasta do projeto no terminal/cd
-$ cd Zara-Ecommerce-Clone
+## Install
+In order to run this project locally, you will need your Firebase credentials. It is really important to have Firebase Storage, database and authentication enabled and configured. 
 
-# Instale as dependências
-$ npm install
-
-# Execute a aplicação em modo de desenvolvimento
+First, clone the project
+```
+$ git clone https://github.com/muhhx/Zara-Ecommerce-Clone
+$ cd zara-ecommerce-clone
+```
+Then, cd into the firebase config file
+```
+$ cd src/Config/firebase
+```
+Change the following data (you can hard code it or put them in environment variables, just make sure to not commit it to github)
+```
+const firebaseConfig = {
+    apiKey: YOUR DATA,
+    authDomain: YOUR DATA,
+    projectId: YOUR DATA,
+    storageBucket: YOUR DATA,
+    messagingSenderId: YOUR DATA,
+    appId: YOUR DATA
+};
+```
+Run locally
+```
 $ npm run dev
 ```
 
-<h4 align="center">Murilo Santos, 2022.✨™</h4>
+
+<h4 align="center">Murilo Santos, 2020.✨™</h4>
